@@ -15,9 +15,9 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 // Route::get('register', [AuthController::class, 'showRegisterForm'])->name('register');
 // Route::post('register', [AuthController::class, 'register']);
@@ -25,5 +25,5 @@ use App\Http\Controllers\DashboardController;
 // Route::post('login', [AuthController::class, 'login']);
 // Route::post('logout', [AuthController::class, 'logout'])->middleware('auth')->name('logout');
 
-Route::get('/', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
+// Route::get('/', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
 
